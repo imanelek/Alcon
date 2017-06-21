@@ -1,0 +1,334 @@
+@font-face {
+font-family: 'Quicksand-Regular';
+src: url('fonts/Quicksand-Regular.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Quicksand-Light';
+src: url('fonts/Quicksand-Light.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Quicksand-Bold';
+src: url('fonts/Quicksand-Bold.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+
+
+#main_wrapper{
+	text-align: center;
+	min-height: 2051px;
+
+}
+
+h1 {
+    position: absolute;
+    top: 8px;
+    left: 862px;
+    font-size: 39px;
+    color: white;
+    text-transform: uppercase;
+    text-align: justify;
+    font-family: 'Quicksand-Light';
+}
+
+.font-change{
+	font-family: 'Quicksand-Regular';
+	text-transform: uppercase;
+}
+
+#img-54{
+margin-left: 203px;
+}
+
+#boite{
+    position: absolute;
+    left: 795px;
+    top: 256px;
+}
+
+#separateur{
+	position: absolute;
+    top: 658px;
+    left: 935px;
+}
+
+#img-27{
+margin-right: 203px;
+}
+
+#offres{
+	margin-top: -100px;
+}
+
+#offres-textes{
+	font-family: 'Quicksand-Light'; 
+}
+
+h2,h3{
+	font-size: 39px;
+	text-transform: uppercase;
+}
+
+h2{
+	color: #bc8c2a;
+    display: flex;
+    flex-direction: row;
+	margin-left: 1205px;
+    margin-top: 10px;
+}
+
+h3{
+	color: #57585a;
+   
+  }
+
+#section27{
+    float: left;
+    margin-top: -165px;
+    margin-left: 334px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+p{
+	font-size: 14px;
+}
+
+#offre54{
+	text-align: right;
+    margin-right: 343px;
+}
+
+#offre27{
+	
+}
+
+#couleurdore{
+	color:#bc8c2a;
+	text-transform: uppercase;
+	font-family: 'Quicksand-Regular';
+}
+
+#sectiontexteformulaire{
+	text-align: justify;
+	margin-left: 335px;
+	margin-top: 32px;
+	font-size: 16px;
+}
+
+#formaulairewrap{
+    width: 733px;
+    height: 149px;
+    float: right;
+    margin-top: -128px;
+    margin-right: 339px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #bc8c2a;
+    background-color: #f9fef0;
+}
+
+.changepolice{
+	font-size: 13px;
+}
+
+label > input{ 
+  visibility: hidden;
+  position: absolute;
+}
+label > input + img{ 
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ 
+  border:2px solid #26887f;
+}
+
+
+.inpt{
+    border:solid 1px #bc8c2a; 
+    box-shadow: 2px -1px 0px 0px rgba(64,64,64,1);
+    height: 33px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.inpt:focus{
+    border:2px solid green;
+}
+
+input#g {
+    margin-left: 133px;
+}
+
+label {
+    margin-left: 19px;
+}
+
+button{
+background: url(images/btn-valide.jpg) no-repeat;
+color: white;
+}
+
+form {
+    text-align: justify;
+    display: inline-block;
+}
+
+
+#a{    
+	width: 154px;
+}
+
+#b{    
+	width: 160px;
+}
+
+#c{    
+	width: 223px;
+}
+
+#d{    
+	width: 379px;
+}
+
+#e{    
+	width: 110px;
+}
+
+#f{    
+	width: 65px;
+}
+
+#g{    
+	width: 379px;
+}
+
+#h{    
+	width: 185px;
+}
+
+#a,#d,#g{
+	margin-left: 19px;
+}
+
+
+article {
+        position: absolute;
+    left: 940px;
+    font-size: 9px;
+    top: 966px;
+    font-family: 'Quicksand-Bold';
+    text-align: justify;
+    width: 614px;
+}
+
+#border {
+    background-size: cover;
+    margin-top: 11px;
+    margin-left: 0px;
+}
+
+#partie2 {
+    background-color: #f9fdec;
+    width: 1369px;
+    height: 1402px;
+    margin: 0 auto;
+}
+
+img#offre1 {
+    position: relative;
+    top: 4px;
+    left: -37px;
+}
+
+
+img#offre2 {
+    position: relative;
+    top: 4px;
+    left: 33px;
+}
+
+
+img#btn-clients {
+    position: absolute;
+    top: 1040px;
+    left: 342px;
+}
+
+span#texteoffre1 {
+    position: absolute;
+    left: 641px;
+    top: 1058px;
+    width: 272px;
+    text-align: justify;
+    font-size: 11px;
+}
+
+span#textoffre1 {
+    position: absolute;
+    left: 343px;
+    top: 1210px;
+    width: 572px;
+    text-align: justify;
+    font-size: 8px;
+}
+
+span#contenuoffre1 {
+    position: absolute;
+    left: 391px;
+    top: 1129px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-family: 'Quicksand-light';
+    text-transform: uppercase;
+}
+
+span#contenuoffre2 {
+    position: absolute;
+    left: 1016px;
+    top: 1129px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-family: 'Quicksand-light';
+    text-transform: uppercase;
+}
+
+
+img#buble {
+    position: absolute;
+    left: 1412px;
+    top: 1061px;
+}
+
+
+img#horiz {
+    position: absolute;
+    top: 1252px;
+    left: 343px;
+}
+
+/*
+input[type="radio"] {
+    display: block;
+    background-image: url("images/btn-radio.png");
+}
+
+
+
+input[type="button"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+}
+*/
