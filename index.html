@@ -2,7 +2,6 @@
 	<head>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="js/script.js"></script>
 		<title>LDP Alcon</title>
 	</head>
 
@@ -37,27 +36,27 @@
 				<p><div id="couleurdore">Pour profiter des offres</br> 
 				Alcon AIR OPTIX® COLORS,</br> 
 				remplissez le formulaire suivant:</div>
-				Votre RDV vous en fera bénéficier en priorité.</br></br>
-				<span class="changepolice">Pour toute information, contactez notre HOTLINE au 01  70 08 70 46</span>
+				<span class="changepolice">Votre RDV vous en fera bénéficier en priorité.</span></br></br>
+				<span class="changepolicebold">Pourtouteinformation,contacteznotreHOTLINEau01 70087046</span>
 				</p>
 			</section>
 			<div id="formaulairewrap">
-				<form method="post" name="Form" 'onsubmit="return validateForm()"' action="">
+				<form method="post" name="Form" 'onsubmit="return verif()"' action="mailto:imane.lekhzoumy@gmail.com"> <!--"mailto:someone@example.com"-->
 		        <label>
-		        <input type= "radio" name="civilité" value="Madame" class="inpt"/> 
+		        <input type= "radio" name="civilité" value="1" id="Mme" class="inpt" required/> 
 		        <img src="images/btn-radio.png">Madame
 		        </label>
-		        <input type="text" name="answer_a" id="a" placeholder="Nom" class="inpt">
-		        <input type="text" name="answer_b" id="b" placeholder="Prénom"  class="inpt">
-		        <input type="text" name="answer_c" id="c" placeholder="Raison sociale" class="inpt"><br>
+		        <input type="text" name="answer_a" id="a" placeholder="  Nom" class="inpt" required>
+		        <input type="text" name="answer_b" id="b" placeholder="  Prénom"  class="inpt" required>
+		        <input type="text" name="answer_c" id="c" placeholder="  Raison sociale" class="inpt" required><br>
 				<label>
-				<input type= "radio" name="civilité" value="Monsieur" class="inpt"/> 
+				<input type= "radio" name="civilité" value="2" id="Mr" class="inpt"/> 
 				<img src="images/btn-radio.png">Monsieur
 				</label>
-		        <input type="text" name="answer_d" id="d" placeholder="Adresse" class="inpt">
-    			<input type="text" name="answer_e" id="e" placeholder="Ville" class="inpt">
-    			<input type="text" name="answer_f" id="f" placeholder="CPostal" class="inpt">
-    			<input type="emails" name="answer_g" id="g" placeholder="Email" class="inpt">
+		        <input type="text" name="answer_d" id="d" placeholder="  Adresse" class="inpt" required>
+    			<input type="text" name="answer_e" id="e" placeholder="  Ville" class="inpt" required>
+    			<input type="text" name="answer_f" id="f" placeholder="  CPostal" class="inpt" required>
+    			<input type="emails" name="answer_g" id="g" placeholder="  Email" class="inpt" required>
     			<button type="submit" name="submit" id="h" placeholder="JE VALIDE" class="inpt">JE VALIDE</button>
     			</form>
 			</div>
@@ -83,52 +82,143 @@
 				<img src="images/separateur-horiz.png" id="horiz"/>
 				<img src="images/buble.png" id="buble" />
 			</div>
-			<table border="1">
-				<th>
-					
-				</th>
-				<tr colspan="3">
+			<h6>AIR OPTIX COLORS</h6>
+			<div id="h6">
+			LES LABORATOIRES ALCON INNOVENT EN LANCANT LA PREMIERE LENTILLE<br/>
+			DE COULEUR EN SILICONE HYDROGEL A RENOUVELLEMENT MENSUEL<br/>
+			<span style="color: #000">OFFREZ A VOS CLIENTS l'esthetique,le confort et la santé oculaire*</span>
+			</div>
+			
+			<table id="left" bgcolor="white">
+				<tr >
+					<td class="onetd1" colspan="3" bgcolor="#565655">
+					<font color="#fff">Caractéristique techniques des lentilles AIR OPTIX COLORS</font>
+					</td>
 				</tr>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td class="onetd2" colspan="3">
+					Puissances(D);0,00(plan);-0.25 à -6.00 (par palier de 0,25D);-6.50 à -8,00(par palier de 0,50D)<br/>
+					 +6,00 à +0.25 (par palier de 0,25D) (Disponible prochainement)
+					</td>
 				</tr>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td class="onetd3">
+					Epaisseur au centre:<br/>
+					0.08 mm pour -3.00D
+					</td>
+					<td class="onetd4">
+					Materiau:<br/>
+					Latrafilcon B
+					</td>
+					<td class="onetd5">
+					Surface:<br/>
+					technologie permanente du traitement Plasma
+ 					</td>
+				</tr>
+				<tr >
+					<td class="onetd6">
+					Mode de port:<br/>
+					Port journalier
+					</td>
+					<td class="onetd7">
+					Rayon:<br/>
+					8,6 mm
+					</td>
+					<td class="onetd8">
+					Diamètre:<br/>
+					14,2 mm
+					</td>
 				</tr>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td class="onetd9">
+					Mode de remplacement:<br/>
+					Mensuel-Pack de 2
+					</td>
+					<td class="onetd10">
+					Dk, Dk/e:<br/>
+					110,138 @ -3.00D
+					</td>
+					<td class="onetd11">
+					Hydrophilie:<br/>
+					33%
+					</td>
 				</tr>
 			</table>
+
+			<table id="icones">
+				<tr>
+					<td id="twotd1"><img class="imgicone" src="images/icone-oeuil.png"></td>
+				</tr>
+				<tr>
+					<td id="twotd2"><img class="imgicone" src="images/icone-silicone.png"></td>
+				</tr>
+				<tr>
+					<td id="twotd3"><img class="imgicone" src="images/icone-plazma.png"></td>
+				</tr>
+				<tr>
+					<td id="twotd4"><img class="imgicone" src="images/icone-aqua.png"></td>
+				</tr>
+				<tr>
+					<td id="twotd5"><img class="imgicone" src="images/icone-check.png"></td>
+				</tr>
+				<tr>
+					<td id="twotd6"><img class="imgicone" src="images/icone-9couleurs.png"></td>
+				</tr>
+			</table>
+
+
+
+			<table id="textsicones">
+				<tr>
+				<td id="threetd1"><span class="cara">TECHNOLOGIE COULEUR 3-EN-1 </span>DE FRESHLOOK</br>
+			AVEC INTEGRATION DE LA COULEUR DANS LE SILICONE HYDROGEL</td>
+				</tr>
+				<tr>
+				<td id="threetd2"><span class="cara">MATERIAU EN SILICONE HYDROGEL PERMETTANT UNE PERMEABILITE</br> A LOXYGENE</span></br>
+			JUSQU'A 6 FOIS SUPERIEURE A CELLE DES LENTILLES DE CONTACT</br> COLOREES PRESENTES SUR LE MARCHE</td>
+				</tr>
+				<tr>
+				<td id="threetd3"><span class="cara">TECHNOLOGIE UNIQUE DU TRAITEMENT PLASMA</br></span>
+			POUR UN CONFORT DE PORT LONGUE DUREE DU JOUR 1 AU JOUR 30².</td>
+				</tr>
+				<tr>
+				<td id="threetd4"><span class="cara">TECHNOLOGIE AQUA TESTEE</span></td>
+				</tr>
+				
+				<tr>
+			<td id="threetd5"><span class="cara">PAS DE READAPTATION NECESSAIRE</br></span>
+			POUR LES PORTEURS D'AIR OPTIX AQUA</td>
+				</tr>
+				<tr>
+			<td id="threetd6"><span class="cara">9 COULEURS DISPONIBLES</br></span>
+			UN REGARD NATUREL AUX COULEURS SUBTILESET PROFONDES</td>
+				</tr>
+		</table>
+
+		<img src="images/border-footer.png" id="border-footer"/>
+		<footer>
+			<img src="images/logo-footer.png" id="logo-footer" />
+			<img src="images/boitealcon-footer.png" id="boitealcon-footer"/>
+			<p id="slogon-footer">LA SCIENCE VECTEUR DE PERFORMANCE</p>
+			<img src="images/separateur-horiz-footer.png" id="separateur-horiz-footer"/>
+			<p id="savoir-plus">POUR EN SAVOIR PLUS RENDEZ-VOUS SUR www. airoptixcolors.fr</p>
+
+			<p id="mentions-legales">* Sous réserve de non contre-indication au port de lentilles de contact.
+			(1) Based on the ratio of lens oxygen transmissibilities. R-383-MET-72828-01-C Sept 2013, page 17 à 19.
+			(2) Eiden SB, Davis R, Bergenske P. Prospective study of lotrafilcon B lenses comparing 2 versus 4 weeks of wear for objective and subjective measures of health, comfort, and vision. Eye & Contact Lens. 2013;39(4):290-294.
+			Les lentilles AIR OPTIX® COLORS (Dk/e = 138 à -3,00D) sont indiquées pour la correction optique des personnes ayant des yeux sains présentant un astigmatisme minime. Les lentilles mensuelles de port journalier nécessitent un entretien approprié chaque soir et doivent être renouvelées tous les mois.
+			Veuillez lire attentivement les instructions figurant dans la notice et sur l’étiquetage. L’entretien correct des lentilles et le renouvellement régulier de l’étui-lentilles sont essentiels. Le port de lentilles de contact est possible sous réserve de non contre-indication médicale au port de lentilles.
+			Dispositif médical de classe IIa - Organisme notifié : 0086 BSI - Fabricant : Alcon Laboratories, Inc. Ces dispositifs médicaux ne sont pas pris en charge par l’Assurance Maladie, excepté dans les indications suivantes sur prescription médicale: astigmatisme irrégulier, myopie supérieure ou égale à 8 dioptries, aphakie, anisométropie à 3 dioptries, strabisme accommodatif, kératocône. Juin 2014 - O299 (n° de réf interne)</p>
+			
+
+			<span id="mention-legale">mentions légales</span>
+		</footer>
 			</div>
+
+
+
+<!--******************Scripts JS***************-->
+		<script src="js/script.js"></script>			
 		</body>
 		</div>
 	</body>
-
-
-
-
-
-
-	<!--
-
-	<form method="post" name="Form" 'onsubmit="return validateForm()"' action="">
-		        <input type= "radio" name="civilité" value="Madame"/> Madame
-		        <textarea cols="10" rows="1" name="answer_a" id="a" placeholder="Nom"></textarea>
-		        <textarea cols="10" rows="1" name="answer_b" id="b" placeholder="Prénom" ></textarea>
-		        <textarea cols="20" rows="1" name="answer_c" id="c" placeholder="Raison sociale"></textarea>
-				<input type= "radio" name="civilité" value="Monsieur"/> Monsieur
-		        <textarea cols="30" rows="1" name="answer_d" id="d" placeholder="Adresse"></textarea>
-    			<textarea cols="10" rows="1" name="answer_e" id="e" placeholder="Ville"></textarea>
-    			<textarea cols="10" rows="1" name="answer_f" id="f" placeholder="CPostal"></textarea>
-    			<input type="emails" cols="30" rows="1" name="answer_g" id="g" placeholder="Email">
-    			<button type="submit" name="submit" placeholder="JE VALIDE" class="style_input2">JE VALIDE</button>
-    			</form>
-
-
-    -->
