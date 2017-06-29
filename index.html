@@ -1,12 +1,12 @@
 <!Doctype html>
 	<head>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
 		<title>LDP Alcon</title>
 	</head>
 
 	<body>
-		<div id="main_wrapper">
+	<div id="main_wrapper">
 		<header>
 			<div id="banniere">
 				<img src="images/header.jpg">
@@ -15,19 +15,18 @@
 				</h1>
 			</div>
 		</header>
-		<body>
-			<div id="offres">
+		<div id="offres">
 			<img id="img-27" src="images/offre27.png"/>
 			<img id="boite"  src="images/boitealcon.png">
-			<img id="separateur" src="images/separateur.png">
 			<img id="img-54" src="images/offre54.png">
-			</div>
-			<div id="offres-textes">
+		</div>
+		<div id="offres-textes">
 			<section id="section54">
 				<h2>Offre 54 boîtes</h2>
 				<p id="offre54">Les consommateurs de VOTRE zone de chalandise reçoivent des<br/> emails qui sont directement personnalisés avec le nom<br/>
 				et l’adresse de VOTRE point de vente.</p>
 			</section>
+			<img id="separateur" src="images/separateur.png">
 			<section id="section27">
 				<h3>Offre 27 boîtes</h3>
 				<p id="offre27">Les consommateurs qui reçoivent les emails AIR OPTIX® COLORS peuvent <br/>choisir VOTRE point de vente dans la liste des magasins participants.</p>
@@ -40,44 +39,44 @@
 				<span class="changepolicebold">Pourtouteinformation,contacteznotreHOTLINEau01 70087046</span>
 				</p>
 			</section>
-			<div id="formaulairewrap">
-				<form method="post" name="Form" 'onsubmit="return verif()"' action="mailto:imane.lekhzoumy@gmail.com"> <!--"mailto:someone@example.com"-->
+		</div>
+		<div id="formaulairewrap">
+			<form method="post" name="Form" onsubmit="verif()" action="mailto:imane.lekhzoumy@gmail.com"> 
 		        <label>
-		        <input type= "radio" name="civilité" value="1" id="Mme" class="inpt" required/> 
+		        <input type= "radio" name="civilité" value="1" id="Mme" class="inpt" required /> 
 		        <img src="images/btn-radio.png">Madame
 		        </label>
-		        <input type="text" name="answer_a" id="a" placeholder="  Nom" class="inpt" required>
-		        <input type="text" name="answer_b" id="b" placeholder="  Prénom"  class="inpt" required>
-		        <input type="text" name="answer_c" id="c" placeholder="  Raison sociale" class="inpt" required><br>
+		        <input type="text" name="answer_a" id="a" placeholder="  Nom" class="inpt" required pattern="^[a-zA-Z]{1,20}$" title="seulement les lettres sont acceptées">
+		        <input type="text" name="answer_b" id="b" placeholder="  Prénom"  class="inpt" required pattern="^[a-zA-Z]{1,20}$" title="seulement les lettres sont acceptées">
+		        <input type="text" name="answer_c" id="c" placeholder="  Raison sociale" class="inpt" required pattern="^[0-9]{1,20}$" title="seulement les chiffres sont acceptées"><br>
 				<label>
 				<input type= "radio" name="civilité" value="2" id="Mr" class="inpt"/> 
 				<img src="images/btn-radio.png">Monsieur
 				</label>
-		        <input type="text" name="answer_d" id="d" placeholder="  Adresse" class="inpt" required>
-    			<input type="text" name="answer_e" id="e" placeholder="  Ville" class="inpt" required>
-    			<input type="text" name="answer_f" id="f" placeholder="  CPostal" class="inpt" required>
-    			<input type="emails" name="answer_g" id="g" placeholder="  Email" class="inpt" required>
+		        <input type="text" name="answer_d" id="d" placeholder="  Adresse" class="inpt" required pattern="([a-zA-Z0-9]| |/|\|@|#|$|%|&)+" >
+    			<input type="text" name="answer_e" id="e" placeholder="  Ville" class="inpt" required pattern="([a-zA-Z]| |/|\|@|#|$|%|&)+">
+    			<input type="text" name="answer_f" id="f" placeholder="  CPostal" class="inpt" required pattern="[0-9]{1,20}" title="seulement les chiffres sont acceptées">
+    			<input type="emails" name="answer_g" id="g" placeholder="  Email" class="inpt" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
     			<button type="submit" name="submit" id="h" placeholder="JE VALIDE" class="inpt">JE VALIDE</button>
-    			</form>
-			</div>
+    		</form>
+		</div>
 			<article>
 				<b>Conformément à la loi Informatique et Libertés du 6 janvier 1978, vous disposez d'un droit d'accès, de rectification et de suppression des données qui vous concernent. Vous pouvez exercer ce droit par écrit à l'adresse suivante : Alcon - Service Compliance - 4 rue Henri Sainte Claire Deville - 92563 Rueil-Malmaison - France</b>
 			</article>
 			<img id="border" src="images/border.png"/>
 			<img src="images/offre1.jpg" id="offre1"> 
-			<span id="contenuoffre1"><b>Offre de remboursement</b><br/>  
-			Pour l’achat d’une boîte de lentilles AIR OPTIX® COLORS<br/>
+			<span id="contenuoffre1"><b>Offre de remboursement</b></br> 
+			Pour l’achat d’une boîte de lentilles AIR OPTIX® COLORS</br> 
 			vos clients pourront se faire rembourser*
 			</span>
 			<img src="images/offre1.jpg" id="offre2">
-			<span id="contenuoffre2"><b>Offre beauté</b><br/>  
-			Pour l’achat d’une boîte de lentilles AIR OPTIX® COLORS<br/> 
+			<span id="contenuoffre2"><b>Offre beauté</b></br>   
+			Pour l’achat d’une boîte de lentilles AIR OPTIX® COLORS</br> 
 			+ 1 euro, vos clients pourront profiter d’une séance beauté*
 			</span>
-			<img src="images/btn-clients.png" id="btn-clients">
-			<span id="texteoffre1"> Deux offres spéciales <br>
-			pour l’achat d’une boîte d’AIR OPTIX® COLORS :</span>
-			<span id="textoffre1">* Offre nominative et limitée à une participation par foyer (même nom, même adresse), réservée aux personnes majeures de France Métropolitaine (Corse inclus) et ayant acheté une boite de AIR OPTIX ® COLORS avant le 30 octobre 2014 chez les opticiens participants.</span>
+			<img src="images/btn-clients.png" id="btn-clients"/>
+			<span id="texteoffre1"> Deux offres spéciales</br> pour l’achat d’une boîte d’AIR OPTIX® COLORS :</span>
+			<span id="textoffre1">* Offre nominative et limitée à une participation par foyer (même nom, même adresse), réservée aux personnes majeures de France Métropolitaine (Corse inclus)<br> et ayant acheté une boite de AIR OPTIX ® COLORS avant le 30 octobre 2014 chez les opticiens participants.</span>
 			<div id="partie2" >
 				<img src="images/separateur-horiz.png" id="horiz"/>
 				<img src="images/buble.png" id="buble" />
@@ -103,43 +102,43 @@
 				</tr>
 				<tr>
 					<td class="onetd3">
-					Epaisseur au centre:<br/>
+					<span class="titre-bold">Epaisseur au centre:</span><br/>
 					0.08 mm pour -3.00D
 					</td>
 					<td class="onetd4">
-					Materiau:<br/>
+					<span class="titre-bold">Materiau:</span><br/>
 					Latrafilcon B
 					</td>
 					<td class="onetd5">
-					Surface:<br/>
+					<span class="titre-bold">Surface:</span><br/>
 					technologie permanente du traitement Plasma
  					</td>
 				</tr>
 				<tr >
 					<td class="onetd6">
-					Mode de port:<br/>
+					<span class="titre-bold">Mode de port:</span><br/>
 					Port journalier
 					</td>
 					<td class="onetd7">
-					Rayon:<br/>
+					<span class="titre-bold">Rayon:</span><br/>
 					8,6 mm
 					</td>
 					<td class="onetd8">
-					Diamètre:<br/>
+					<span class="titre-bold">Diamètre:</span><br/>
 					14,2 mm
 					</td>
 				</tr>
 				<tr>
 					<td class="onetd9">
-					Mode de remplacement:<br/>
-					Mensuel-Pack de 2
+					<span class="titre-bold">Mode de remplacement:</span><br/>
+					<span style="color: #d6a72f">Mensuel-Pack de 2</span>
 					</td>
 					<td class="onetd10">
-					Dk, Dk/e:<br/>
+					<span class="titre-bold">Dk, Dk/e:</span><br/>
 					110,138 @ -3.00D
 					</td>
 					<td class="onetd11">
-					Hydrophilie:<br/>
+					<span class="titre-bold">Hydrophilie:</span><br/>
 					33%
 					</td>
 				</tr>
@@ -203,22 +202,20 @@
 			<img src="images/separateur-horiz-footer.png" id="separateur-horiz-footer"/>
 			<p id="savoir-plus">POUR EN SAVOIR PLUS RENDEZ-VOUS SUR www. airoptixcolors.fr</p>
 
-			<p id="mentions-legales">* Sous réserve de non contre-indication au port de lentilles de contact.
-			(1) Based on the ratio of lens oxygen transmissibilities. R-383-MET-72828-01-C Sept 2013, page 17 à 19.
-			(2) Eiden SB, Davis R, Bergenske P. Prospective study of lotrafilcon B lenses comparing 2 versus 4 weeks of wear for objective and subjective measures of health, comfort, and vision. Eye & Contact Lens. 2013;39(4):290-294.
-			Les lentilles AIR OPTIX® COLORS (Dk/e = 138 à -3,00D) sont indiquées pour la correction optique des personnes ayant des yeux sains présentant un astigmatisme minime. Les lentilles mensuelles de port journalier nécessitent un entretien approprié chaque soir et doivent être renouvelées tous les mois.
-			Veuillez lire attentivement les instructions figurant dans la notice et sur l’étiquetage. L’entretien correct des lentilles et le renouvellement régulier de l’étui-lentilles sont essentiels. Le port de lentilles de contact est possible sous réserve de non contre-indication médicale au port de lentilles.
-			Dispositif médical de classe IIa - Organisme notifié : 0086 BSI - Fabricant : Alcon Laboratories, Inc. Ces dispositifs médicaux ne sont pas pris en charge par l’Assurance Maladie, excepté dans les indications suivantes sur prescription médicale: astigmatisme irrégulier, myopie supérieure ou égale à 8 dioptries, aphakie, anisométropie à 3 dioptries, strabisme accommodatif, kératocône. Juin 2014 - O299 (n° de réf interne)</p>
+			<p id="mentions-legales">* Sous réserve de non contre-indication au port de lentilles de contact.</br>
+			(1) Based on the ratio of lens oxygen transmissibilities. R-383-MET-72828-01-C Sept 2013, page 17 à 19.</br>
+			(2) Eiden SB, Davis R, Bergenske P. Prospective study of lotrafilcon B lenses comparing 2 versus 4 weeks of wear for objective and subjective measures of health, comfort, and vision. Eye & Contact Lens. 2013;39(4):290-294.</br>
+			Les lentilles AIR OPTIX® COLORS (Dk/e = 138 à -3,00D) sont indiquées pour la correction optique des personnes ayant des yeux sains présentant un astigmatisme minime. Les lentilles mensuelles de port journalier nécessitent un entretien approprié chaque soir et doivent être renouvelées tous les mois.</br>
+			Veuillez lire attentivement les instructions figurant dans la notice et sur l’étiquetage. L’entretien correct des lentilles et le renouvellement régulier de </br>l’étui-lentilles sont essentiels. Le port de lentilles de contact est possible sous réserve de non contre-indication médicale au port de lentilles.</br>
+			Dispositif médical de classe IIa - Organisme notifié : 0086 BSI - Fabricant : Alcon Laboratories, Inc. Ces dispositifs médicaux ne sont pas pris en charge par l’Assurance Maladie, excepté dans les indications suivantes sur prescription médicale: astigmatisme irrégulier, myopie supérieure ou égale à 8 dioptries, aphakie, anisométropie à </br>3 dioptries, strabisme accommodatif, kératocône. Juin 2014 - O299 (n° de réf interne)</p>
 			
 
 			<span id="mention-legale">mentions légales</span>
 		</footer>
-			</div>
+	</div>
 
 
 
 <!--******************Scripts JS***************-->
 		<script src="js/script.js"></script>			
-		</body>
-		</div>
 	</body>

@@ -19,6 +19,26 @@ font-weight: normal;
 font-style: normal;
 }
 
+@font-face {
+font-family: 'helvetica-neue-bold';
+src: url('fonts/helvetica-neue-bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'helvetica-neue-medium';
+src: url('fonts/helvetica-neue-medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'helvetica-neue-ultralight';
+src: url('fonts/helvetica-neue-ultralight.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
 
 ::-webkit-input-placeholder {
    font-style: italic;
@@ -261,6 +281,8 @@ article {
     width: 614px;
 }
 
+
+
 #border {
     background-size: cover;
     margin-top: 11px;
@@ -287,6 +309,11 @@ img#offre2 {
     left: 33px;
 }
 
+img#buble {
+    position: absolute;
+    left: 1412px;
+    top: 1061px;
+}
 
 img#btn-clients {
     position: absolute;
@@ -335,11 +362,7 @@ span#contenuoffre2 {
 }
 
 
-img#buble {
-    position: absolute;
-    left: 1412px;
-    top: 1061px;
-}
+
 
 
 img#horiz {
@@ -354,73 +377,101 @@ table#left {
     position: absolute;
     top: 1387px;
     left: 341px;
-    width: 572px;
+    font-size: 12px;
+}
+
+/****************************************************/
+.titre-bold{
+	font-family: 'helvetica-neue-medium';
 }
 
 td.onetd1{
  border-width:2px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 4px;
+ padding-bottom: 4px;
+
 }
 
 td.onetd2{
  border-width:0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 4px;
+ padding-bottom: 4px;
 }
 
 td.onetd3{
  border-width:2px 2px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 td.onetd4{
  border-width:2px 2px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 td.onetd5{
  border-width:2px 0px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 td.onetd6{
  border-width:2px 2px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 td.onetd7{
  border-width:2px 2px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 td.onetd8{
  border-width:2px 0px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 td.onetd9{
  border-width:2px 2px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 td.onetd10{
  border-width:2px 2px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 td.onetd11{
  border-width:2px 0px 0px 0px;
  border-style:solid; 
  border-color:#deba44;
+ padding-top: 9px;
+ padding-bottom: 9px;
 }
 
 
@@ -587,11 +638,6 @@ span#mention-legale {
     position: absolute;
     margin-left: 3px;
     margin-top: 117px;
-	/*#img-27 {
-    height: 250px;
-    position: absolute;
-    margin-left: -107px;
-    margin-top: 105px;*/
 }
 
 #banniere img {
@@ -602,12 +648,6 @@ span#mention-legale {
     display: none;
 }
 
-/*#img-54 {
-    height: 250px;
-    position: absolute;
-    margin-left: -103px;
-    margin-top: 367px;
-}*/
 
 #img-54 {
     height: 158px;
@@ -623,11 +663,7 @@ section#section54{display: none;}
 
 section#section27{display: none;}
 
-/*#sectiontexteformulaire {
-    text-align: justify;
-    margin-top: 647px;
-    height: 50px;
-}*/
+
 #sectiontexteformulaire {
     margin-top: 294px;
     margin-left: 4px;
@@ -771,15 +807,181 @@ span.cara {
     font-size: 7px;
 }
 
+/**********************Tablette********************************/
 
+@media screen and (max-width: 780px)
+{
+	#img-27 {
+    height: 159px;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 117px;
+}
+
+#banniere img {
+    height: 82px;
+}
+
+#separateur {
+    display: none;
+}
+
+
+#img-54 {
+    height: 158px;
+    position: absolute;
+    margin-left: -162px;
+    margin-top: 113px;
+}
+
+#boite {display: none;}
+
+
+section#section54{display: none;}
+
+section#section27{display: none;}
+
+
+#sectiontexteformulaire {
+    margin-top: 294px;
+    margin-left: 4px;
+}
+
+#border {
+    display: none;
+}
+
+#couleurdore {
+    font-size: 14px;
+}
+
+#formaulairewrap {
+   position: absolute;
+   height: 158px;
+   top: 893px;
+   zoom: 45%;
+}
+
+img#offre2 {
+    display: none;
+}
+
+
+img#offre1 {
+    display: none;
+}
+
+.changepolice {
+    position: absolute;
+    font-size: 14px;
+    font-family: 'QuickSand-bold';
+    color: #585858;
+    top: 431px;
+}
+
+.changepolicebold {
+    position: absolute;
+    font-size: 10px;
+    font-family: 'QuickSand-bold';
+    color: #585858;
+    top: 455px;
+}
+
+img#btn-clients {
+    zoom: 44%;
+    position: absolute;
+    top: 1085px;
+    left: 434px;
+}
+
+span#texteoffre1 {
+    position: absolute;
+    left: 14px;
+    top: 482px;
+    width: 329px;
+    text-align: justify;
+    font-size: 7px;
+}
+
+#partie2, img#border-footer, img#boitealcon-footer,  span#mention-legale{
+    display: none;
+}
+
+
+  span#textoffre1, h6, div#h6, p#mentions-legales{
+    display: none;
+}
+
+table#left {
+    position: absolute;
+    top: 812px;
+    left: 61px;
+}
+
+p#slogon-footer{
+	position: absolute;
+    left: 37px;
+    font-size: 14px;
+    top: 1285px;
+}
+
+img#logo-footer{
+	position: absolute;
+    left: 98px;
+    font-size: 14px;
+    top: 1220px;
+}
+
+p#savoir-plus{
+	position: absolute;
+    left: 13px;
+    font-size: 10px;
+    top: 1347px;
 }
 
 
 
-/*
-input[type="button"] {
-    width: 120px;
-    margin-left: 35px;
-    display: block;
+img#separateur-horiz-footer{
+    position: absolute;
+    left: -22px;
+    font-size: 14px;
+    top: 1335px;
 }
-*/
+
+
+
+body {
+   overflow-x:hidden;
+}
+
+#main_wrapper {
+   min-height: 1200px;
+}
+
+article {
+    position: absolute;
+    left: 15px;
+    font-size: 8px;
+    top: 523px;
+    font-family: 'Quicksand-Bold';
+    text-align: justify;
+    width: 305px;
+}
+
+#icones {
+	left: -225px;
+	top: 926px;
+	zoom: 66%;
+}
+
+#textsicones {
+	left: 68px;
+    top: 607px;
+    font-size: 7px;
+}
+
+span.cara {
+    font-size: 7px;
+}
+
+}
